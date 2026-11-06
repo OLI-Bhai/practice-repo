@@ -4,10 +4,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Practice</title>
+    <title>Task 1</title>
+
+    <style>
+        .container {
+            display: flex;
+            width: 100%;
+            gap: 10px;
+
+        }
+
+        .container div {
+            font-size: 1.5em;
+            border: 1px solid tomato;
+            border-radius: 10px;
+            height: 95vh;
+            justify-content: center;
+            align-items: center;
+            display: grid;
+        }
+
+        .left {
+
+            width: 30%;
+
+            background-color: lightgray;
+
+        }
+
+        .right {
+
+            width: 70%;
+
+            background-color: rgba(255, 160, 122, 0.315);
+        }
+
+        @media screen and (max-width: 360px) {
+
+
+            .container {
+
+                flex-direction: column;
+                height: 100vh;
+                display: flex;
+
+
+            }
+
+            .container div {
+                width: 100%;
+
+            }
+
+            .left {
+                flex: 1;
+            }
+
+            .right {
+                flex: 3;
+            }
+        }
+    </style>
+
 </head>
 
 <body>
+
+    <div class="container">
+
+
+
+        <div class="left"> Left</div>
+        <div class="right"> Right</div>
+
+
+    </div>
+
+
+
+
+
+
 
 </body>
 
